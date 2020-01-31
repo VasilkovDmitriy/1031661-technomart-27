@@ -14,9 +14,12 @@
         <img src="" alt="Логотип магазина «Техномарт»">
       </a>
 
-      <form action="">
-        <button><img src="" alt="Логотип поиска"> </button>
-        <input type="search" placeholder="Поиск:">
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <button type="submit">
+          <img src="" alt="Логотип поиска">
+        </button>
+        <label class="visually-hidden" for="form-search">Поиск</label>
+        <input type="search" name="search" placeholder="Поиск:" id="form-search">
       </form>
 
       <a href="#">Закладки: 0</a>
@@ -38,8 +41,13 @@
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
 
-      <button type="button">Войти</button>
-      <button type="button">Регистрация</button>
+      <a href="login.html">
+        Войти
+      </a>
+      <a href="registration.html">
+        Регистрация
+      </a>
+
     </div>
 
     <nav>
@@ -81,7 +89,7 @@
         заехав в наш офис:</p>
 
       <div>
-        <a href="https://goo.gl/maps/z51uv1mXjcUrpsf97">
+        <a href="#">
           <img src="img/map.jpg" alt="Карта">
         </a>
       </div>
@@ -144,6 +152,40 @@
       <a href="htmlacademy.ru">htmlacademy.ru</a>
     </div>
   </footer>
+
+  <section>
+    <h2>Как до нас добраться</h2>
+
+    <div>
+      <a href="https://goo.gl/maps/z51uv1mXjcUrpsf97">
+        <img src="img/big-map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </a>
+    </div>
+
+    <button type="button">
+      Закрыть
+    </button>
+  </section>
+
+  <section>
+    <h2>Напишите нам</h2>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="form-name">Ваше имя</label>
+        <input type="text" name="user-name" id="form-name">
+      </p>
+      <p>
+        <label for="form-email">Ваш e-mail</label>
+        <input type="email" name="user-email" id="form-email">
+      </p>
+      <p>
+        <label for="form-text">Текст письма</label>
+      <textarea name="user-text" id="form-text" cols="30" rows="10"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 
 </body>
 

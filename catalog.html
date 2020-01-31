@@ -13,10 +13,13 @@
       <a>
         <img src="" alt="Логотип магазина «Техномарт»">
       </a>
-      
-      <form action="">
-        <button><img src="" alt="Логотип поиска"> </button>
-        <input type="search" placeholder="Поиск:">
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <button type="submit">
+          <img src="" alt="Логотип поиска">
+        </button>
+        <label class="visually-hidden" for="form-search" >Поиск</label>
+        <input type="search" name="search" placeholder="Поиск:" id="form-search">
       </form>
 
       <a href="#">Закладки: 0</a>
@@ -69,21 +72,46 @@
 
     <section class="filters">
       <h2>Фильтр товаров</h2>
-      <form action="#">
-        <h3>Производители</h3>
-        <p>
-          <input type="checkbox" name="manufacturer" checked>BOSCH<br> 
-          <input type="checkbox" name="manufacturer">ИНТЕРСКОЛ<br> 
-          <input type="checkbox" name="manufacturer" checked>MAKITA<br> 
-          <input type="checkbox" name="manufacturer">Dewalt<br> 
-          <input type="checkbox" name="manufacturer">Hitachi
-        </p>
-        <h3>Питание</h3>
-        <p>
-          <input type="radio" name="supply" checked>Аккумуляторные<br> 
-          <input type="radio" name="supply">Сетевые
-        </p>
-        <button>Показать</button>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Производители</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li>
+              <input type="radio" name="supply" value="accumulator" id="filter-accumulator" checked>
+              <label for="filter-accumulator">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="supply" value="electronetwork" id="filter-electronetwork">
+              <label for="filter-electronetwork">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
 
@@ -175,9 +203,12 @@
 
     <section class="info">
       <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.<br>
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка.<br>
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+        дрель.</p>
     </section>
   </main>
 
@@ -232,6 +263,15 @@
       <a href="htmlacademy.ru">htmlacademy.ru</a>
     </div>
   </footer>
+
+  <section>
+    <h2>Товар добавлен в корзину!</h2>
+
+    <a href="#">Оформить заказ</a>
+    <a href="#">Продолжить покупки</a>
+    <button type="button">Закрыть</button>
+
+  </section>
 
 </body>
 
