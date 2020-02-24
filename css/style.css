@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .visually-hidden {
@@ -40,6 +40,7 @@ body {
 .header-top__logotype a, 
 .header-top__buttons a {
     display: inline-block;
+    vertical-align: top;
     width: inherit;
     height: inherit;
     position: relative;
@@ -233,7 +234,7 @@ input::-ms-clear {
 }
 
 .header-bottom__info {
-    min-width: 252px;
+    width: 262px;
     font-style: italic;
     color: #ee3643;
     font-size: 16px;
@@ -242,8 +243,16 @@ input::-ms-clear {
     padding-left: 53px;
 }
 
+.header-bottom__info span {
+    padding-right: 20px;
+}
+
+.header-bottom-contacts {
+    padding-right: 10px;
+}
+
 .header-bottom-contacts-catalog {
-    padding-left: 14px;
+    padding-left: 9px;
 }
 
 .header-bottom-contacts__phone {
@@ -294,6 +303,7 @@ input::-ms-clear {
 .header-bottom-login-buttons__login, 
 .header-bottom-login-buttons__reg {
     display: inline-block;
+    vertical-align: top;
     height: 45px;
     color: #000000;
     background-color: #ffffff;
@@ -356,6 +366,7 @@ input::-ms-clear {
 
 .header-bottom-user-button {
     display: inline-block;
+    vertical-align: top;
     width: 299px;
     height: 45px;
     background-color: #ffffff;
@@ -392,23 +403,25 @@ input::-ms-clear {
     color: #32425c;
     text-decoration: underline;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .header-bottom-user-ref__user-order {
-    margin: 2px 14px 0 16px;
+    margin: 6px 10px 0 15px;
 }
 
 .header-bottom-user-ref__user-account {
-    margin: 2px 15px 0 7px;
+    margin: 6px 15px 0 7px;
 }
 
 .header-bottom-user-ref__user-circle {
     display: inline-block;
+    vertical-align: middle;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background-color: #32425c;
-    margin-bottom: 2px;
+    margin-bottom: -6px;
 }
 
 .header-bottom-user-ref__user-order:hover, 
@@ -500,20 +513,23 @@ input::-ms-clear {
 }
 
 .information-section__paragraph-1 {
+    width: 519px;
     margin-bottom: 24px;
 }
 
 .information-section__paragraph-2 {
+    width: 386px;
     margin-bottom: 16px;
 }
 
 .contacts-section__paragraph-1 {
+    width: 179px;
     margin-bottom: 31px;
 }
 
 .information-section p, 
 .contacts-section p {
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
 }
@@ -540,7 +556,7 @@ input::-ms-clear {
     font-size: 18px;
     line-height: 20px;
     list-style: none;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .information-section__transport-items li {
@@ -548,17 +564,18 @@ input::-ms-clear {
 }
 
 .information-section__transport-items li:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .information-section__transport-item {
     display: inline-block;
+    vertical-align: bottom;
     width: 2px;
     height: 25px;
     background-color: #ee3643;
     margin-left: 13px;
     margin-right: 25px;
-    margin-bottom: -6px;
+    margin-bottom: 0px;
     transform: rotate(90deg);
 }
 
@@ -630,6 +647,7 @@ input::-ms-clear {
 
 .footer-top__logotype a {
     display: inline-block;
+    vertical-align: top;
     width: inherit;
     height: inherit;
     position: relative;
@@ -682,6 +700,7 @@ input::-ms-clear {
 }
 
 .footer-center__address {
+    width: 335px;
     color: #f1f5f7;
     font-size: 18px;
     line-height: 24px;
@@ -719,6 +738,7 @@ input::-ms-clear {
 }
 
 .footer-bottom__copyright {
+    width: 228px;
     color: #ffffff;
     font-size: 16px;
     line-height: 18px;
@@ -767,6 +787,7 @@ input::-ms-clear {
 
 .footer-bottom__social-network-item {
     display: inline-block;
+    vertical-align: top;
     width: 41px;
     height: 41px;
     border-radius: 50%;
@@ -791,13 +812,14 @@ input::-ms-clear {
 }
 
 .breadcrumbs a, .breadcrumbs li {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .breadcrumbs li>a {
@@ -811,6 +833,7 @@ input::-ms-clear {
 .breadcrumbs ul {
     list-style-image: url("../img/icon-right-small.svg");
     display: inline-block;
+    vertical-align: middle;
     padding-left: 0px;
     margin: 19px 0 20px 0;
 }
@@ -870,7 +893,7 @@ input::-ms-clear {
 
 .catalog__filters label {
     color: #000000;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
@@ -878,7 +901,7 @@ input::-ms-clear {
 
 .catalog__filters legend {
     color: #000000;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
@@ -892,6 +915,7 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="checkbox"]+label {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding-left: 30px;
     line-height: 20px;
@@ -902,6 +926,7 @@ input[type="checkbox"]+label {
 input[type="checkbox"]+label:before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 23px;
     height: 23px;
     border: 2px solid #c5c5c5;
@@ -931,6 +956,7 @@ input[type="checkbox"]+label:hover:after {
 
 input[type="radio"]+label {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding-left: 36px;
     line-height: 20px;
@@ -941,6 +967,7 @@ input[type="radio"]+label {
 input[type="radio"]+label:before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 25px;
     height: 25px;
     border: 4px solid #c5c5c5;
@@ -953,6 +980,7 @@ input[type="radio"]+label:before {
 input[type="radio"]:checked+label:after {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 9px;
     height: 9px;
     border: 4.5px solid #c5c5c5;
@@ -975,7 +1003,7 @@ input[type="radio"]+label:hover:after {
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     background-color: #ffffff;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1024,10 +1052,10 @@ input[type="radio"]+label:hover:after {
 .catalog-item__title {
     padding-top: 5px;
     min-height: 45px;
-    width: 87%;
+    width: 80%;
     margin: 0 auto;
-    font-family: "PTSans", sans-serif;
-    font-size: 16px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
     line-height: 20px;
     text-align: center;
     font-weight: bold;
@@ -1038,7 +1066,7 @@ input[type="radio"]+label:hover:after {
     width: 100%;
     margin-top: 12px;
     text-align: center;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
@@ -1052,7 +1080,7 @@ input[type="radio"]+label:hover:after {
     margin-left: 43px;
     margin-top: 7px;
     color: white;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 18px;
@@ -1091,7 +1119,7 @@ input[type="radio"]+label:hover:after {
     color: white;
     font-size: 14px;
     font-weight: normal;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1192,6 +1220,7 @@ input[type="radio"]+label:hover:after {
 
 .catalog__filter-checkbox span {
     display: inline-block;
+    vertical-align: bottom;
     position: absolute;
     top: -13px;
     left: 34px;
@@ -1255,7 +1284,7 @@ input[type="radio"]+label:hover:after {
 .range-filter__price-controls input {
     width: 95px;
     height: 38px;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -1267,6 +1296,7 @@ input[type="radio"]+label:hover:after {
 .range-filter__price-controls span {
     box-sizing: border-box;
     display: inline-block;
+    vertical-align: top;
     width: 10px;
     height: 1px;
     background-color: #000000;
@@ -1278,7 +1308,7 @@ input[type="radio"]+label:hover:after {
     width: 220px;
     height: 38px;
     background-color: #f7f3ec;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-align: left;
@@ -1408,11 +1438,12 @@ input[type='number'] {
 
 .pagination-list__item a {
     display: inline-block;
+    vertical-align: top;
     width: inherit;
     height: inherit;
     text-decoration: none;
     color: #000000;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1462,10 +1493,11 @@ input[type='number'] {
 }
 
 .main__info p {
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
+    padding-right: 25px;
 }
 
 .catalog__popup {
@@ -1512,7 +1544,7 @@ input[type='number'] {
 }
 
 .catalog-popup__text {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     margin: 0 32px;
@@ -1530,6 +1562,7 @@ input[type='number'] {
 .catalog-popup-button__register, 
 .catalog-popup-button__continue {
     display: inline-block;
+    vertical-align: top;
     width: 220px;
     height: 38px;
     border-radius: 3px;
@@ -1595,7 +1628,7 @@ input[type='number'] {
 }
 
 .main-menu-item__text {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.25;
@@ -1608,11 +1641,12 @@ input[type='number'] {
 
 .main-menu-item__button {
     display: inline-block;
+    vertical-align: top;
     width: 135px;
     height: 38px;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     text-align: center;
     text-decoration: none;
     position: absolute;
@@ -1630,6 +1664,7 @@ input[type='number'] {
 
 .main-menu-item__button span {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
@@ -1715,6 +1750,7 @@ input[type='number'] {
 .popular-product-header__button, 
 .popular-manufacturer-header__button {
     display: inline-block;
+    vertical-align: top;
     width: 253px;
     height: 38px;
     background-color: #ee3643;
@@ -1856,7 +1892,7 @@ button::-moz-focus-inner {
 
 .services__content p {
     margin: 0;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
@@ -1885,6 +1921,7 @@ button::-moz-focus-inner {
 
 .services__content-credit a {
     display: inline-block;
+    vertical-align: top;
     width: 195px;
     height: 38px;
     background-color: #ff5357;
@@ -1932,13 +1969,14 @@ button::-moz-focus-inner {
 }
 
 .services__information p {
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
     margin: 0;
     margin-left: -1px;
     padding-bottom: 68px;
+    padding-right: 530px;
 }
 
 .map__popup {
@@ -2011,10 +2049,15 @@ button::-moz-focus-inner {
 }
 
 .feedback-form__form label {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 1;
     text-align: left;
+}
+
+.feedback-form__left-column,
+.feedback-form__right-column {
+    width: 220px;
 }
 
 .feedback-form__form input[type="text"], 
@@ -2029,7 +2072,7 @@ button::-moz-focus-inner {
 
 .feedback-form__form input::placeholder,
 .feedback-form__form textarea::placeholder {
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
@@ -2153,6 +2196,7 @@ button::-moz-focus-inner {
 
 .slider__catalog-button {
     display: inline-block;
+    vertical-align: top;
     width: 195px;
     height: 38px;
     text-decoration: none;

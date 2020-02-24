@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,8 +74,8 @@
         <div class="header-bottom">
             <div class="header-bottom__wrapper">
                 <div class="header-bottom__info">
-                    Интернет-магазин <br>
-                    строительных материалов <br>
+                    Интернет-магазин
+                    <span>строительных материалов</span>  
                     и инструментов для ремонта
                 </div>
 
@@ -368,7 +368,7 @@
                 <div class="services__information">
                     <h3>Сервисы</h3>
                     <p>
-                        Хороший интернет-магазин отличается от плохого не только ценами!<br>
+                        Хороший интернет-магазин отличается от плохого не только ценами!
                         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                     </p>
                 </div>
@@ -428,11 +428,11 @@
                     <h2>КОМПАНИЯ «Техномарт»</h2>
 
                     <p class="information-section__paragraph-1">Настоящий мужской шоппинг начинается здесь! Огромный
-                        выбор товаров для ремонта и<br>
-                        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                        выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+                    </p>
                     <p class="information-section__paragraph-2">Мы можем доставить ваш товар в самые отдаленные точки
-                        России!<br>
-                        Техномарт работает со многими транспортными компаниями: </p>
+                        России! Техномарт работает со многими транспортными компаниями: 
+                    </p>
 
                     <ul class="information-section__transport-items">
                         <li>
@@ -454,8 +454,9 @@
                 <section class="contacts-section">
                     <h2>КОНТАКТЫ</h2>
 
-                    <p class="contacts-section__paragraph-1">Вы можете забрать товар сами,<br>
-                        заехав в наш офис:</p>
+                    <p class="contacts-section__paragraph-1">Вы можете забрать товар сами, 
+                        заехав в наш офис:
+                    </p>
 
                     <button class="contacts-section__map"></button>
 
@@ -503,7 +504,7 @@
         <div class="footer-center">
             <div class="footer-center__wrapper">
                 <p class="footer-center__address">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </p>
 
@@ -519,7 +520,7 @@
         <div class="footer-bottom">
             <div class="footer-bottom__wrapper">
                 <div class="footer-bottom__copyright">
-                    © 2010–2019 Компания «Техномарт»<br>
+                    © 2010–2019 Компания «Техномарт»
                     Все права защищены
                 </div>
 
@@ -572,16 +573,16 @@
         <div class="feedback-form__content">
             <div class="feedback-form__close"></div>
             <form class="feedback-form__form" method="get" action="https://echo.htmlacademy.ru" id="feedback">
-                <label>
-                    Ваше имя:<br><input type="text" name="name" placeholder="Имя Фамилия">
-                </label>
-                <label>
-                    Ваш email:<br><input type="email" name="email" placeholder="email@example.com">
-                </label>
-                <label>
-                    Текст письма:<br><textarea name="text" placeholder="В свободной форме" cols="30"
-                        rows="5"></textarea>
-                </label>
+                <div class="feedback-form__left-column">
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+                </div>
+                <div class="feedback-form__right-column">
+                    <label for="user-email">Ваш email:</label>
+                    <input type="email" name="email" placeholder="email@example.com" id="user-email">
+                </div>
+                <label for="user-text">Текст письма:</label>
+                <textarea name="text" placeholder="В свободной форме" cols="30" rows="5" id="user-text"></textarea>
             </form>
             <div class="feedback-form__submit-wrapper">
                 <button type="submit" class="feedback-form__submit" form="feedback">Отправить</button>
