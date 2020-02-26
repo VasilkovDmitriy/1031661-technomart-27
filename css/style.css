@@ -1830,10 +1830,53 @@ input[type='number'] {
     position: relative;
 }
 
-.services__buttons img {
+.services__buttons::after {
+    content: '';
     position: absolute;
+    width: 10px;
+    height: 279px;
+    top: 52%;
     right: 0;
-    top: -46px;
+    transform: translateY(-50%);
+    background-image: url("../img/shadow.png");
+    background-repeat:no-repeat;
+}
+
+
+.services__content-delivery::after {
+    content: '';
+    position: absolute;
+    width: 468px;
+    height: 261px;
+    top: 85%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/delivery.png");
+    background-repeat:no-repeat;
+}
+
+.services__content-guarantee::after {
+    content: '';
+    position: absolute;
+    width: 389px;
+    height: 283px;
+    top: 78%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/guarantee.png");
+    background-repeat:no-repeat;
+}
+
+.services__content-credit::after {
+    content: '';
+    position: absolute;
+    width: 465px;
+    height: 285px;
+    top: 78%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/credit.png");
+    background-repeat:no-repeat;
 }
 
 .services__button {
@@ -2245,3 +2288,4 @@ button::-moz-focus-inner {
     top: 62px;
     left: 24px;
 }
+
